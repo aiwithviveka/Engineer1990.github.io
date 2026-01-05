@@ -49,8 +49,8 @@ const About = () => {
                 className="w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-apple-gray-900/70 to-transparent flex flex-col justify-end p-8 text-apple-white">
-                <h3 className="text-xl font-medium mb-2">Bhargav Patel</h3>
-                <p className="text-sm font-light">ML Engineer & AI Specialist</p>
+                <h3 className="text-xl font-medium mb-2">Viveka Sharma</h3>
+                <p className="text-sm font-light">Agentic AI Specialist</p>
               </div>
             </div>
 
@@ -66,7 +66,7 @@ const About = () => {
                 <Book className="w-5 h-5 mr-3 text-apple-blue-600" />
                 <div>
                   <h4 className="font-medium text-sm">Education</h4>
-                  <p className="text-apple-gray-800">B.Tech Computer Science</p>
+                  <p className="text-apple-gray-800">M.Tech Computer Science</p>
                 </div>
               </div>
             </div>
@@ -74,7 +74,7 @@ const About = () => {
             <h3 className="text-2xl font-medium mb-6 mt-8 reveal">Connect With Me</h3>
             <div className="grid grid-cols-2 gap-3 md:gap-4 reveal">
               <a 
-                href="https://www.linkedin.com/in/bhargav-p-patel" 
+                href="https://www.linkedin.com/in/aiwithviveka" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-apple-gray-50 p-4 md:p-5 rounded-xl flex items-center hover:bg-apple-gray-100 transition-colors"
@@ -84,7 +84,7 @@ const About = () => {
                 <span className="text-apple-gray-800 text-sm">LinkedIn</span>
               </a>
               <a 
-                href="http://github.com/Engineer1999" 
+                href="http://github.com/aiwithviveka" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-apple-gray-50 p-4 md:p-5 rounded-xl flex items-center hover:bg-apple-gray-100 transition-colors"
@@ -94,7 +94,7 @@ const About = () => {
                 <span className="text-apple-gray-800 text-sm">GitHub</span>
               </a>
               <a 
-                href="https://medium.com/@callbhargavp" 
+                href="https://medium.com/@aiwithviveka" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-apple-gray-50 p-4 md:p-5 rounded-xl flex items-center hover:bg-apple-gray-100 transition-colors"
@@ -104,7 +104,7 @@ const About = () => {
                 <span className="text-apple-gray-800 text-sm">Medium</span>
               </a>
               <a 
-                href="https://x.com/0xbhargavpatel" 
+                href="https://x.com/aiwithviveka" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-apple-gray-50 p-4 md:p-5 rounded-xl flex items-center hover:bg-apple-gray-100 transition-colors"
