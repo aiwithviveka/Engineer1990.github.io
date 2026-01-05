@@ -1,46 +1,44 @@
-
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from "react";
 
 const skillCategories = [
   {
-    name: "Languages & Frameworks",
+    name: "Programming & Scripting",
     skills: [
       "Python",
-      "TensorFlow",
-      "PyTorch",
-      "Scikit-learn",
+      "Bash",
       "JavaScript",
-      "SQL"
+      "SQL",
+      "Automation Scripts"
     ]
   },
   {
-    name: "ML/DL Expertise",
+    name: "DevOps & Cloud",
     skills: [
-      "Computer Vision",
-      "Natural Language Processing",
-      "Time Series Analysis",
-      "Recommender Systems",
-      "Reinforcement Learning"
-    ]
-  },
-  {
-    name: "Cloud & DevOps",
-    skills: [
-      "AWS",
+      "Linux",
       "Docker",
       "Kubernetes",
-      "CI/CD Pipelines",
-      "MLOps"
+      "CI/CD (GitHub Actions, Jenkins)",
+      "AWS & Azure Basics"
     ]
   },
   {
-    name: "Data Engineering",
+    name: "Agentic AI & GenAI",
     skills: [
-      "Spark",
-      "Kafka",
-      "ETL Pipelines",
-      "Data Visualization",
-      "Big Data Technologies"
+      "LLMs Fundamentals",
+      "Prompt Engineering",
+      "Agentic Workflows",
+      "RAG Concepts",
+      "AI Automation Use Cases"
+    ]
+  },
+  {
+    name: "Systems & Observability",
+    skills: [
+      "Git & GitHub",
+      "Monitoring & Logging",
+      "System Troubleshooting",
+      "Basic Networking",
+      "Production Support Mindset"
     ]
   }
 ];
@@ -53,10 +51,10 @@ const Skills = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const elements = entry.target.querySelectorAll('.reveal');
+            const elements = entry.target.querySelectorAll(".reveal");
             elements.forEach((el, index) => {
               setTimeout(() => {
-                el.classList.add('active');
+                el.classList.add("active");
               }, 150 * index);
             });
           }
@@ -65,31 +63,38 @@ const Skills = () => {
       { threshold: 0.2 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
+    if (sectionRef.current) observer.observe(sectionRef.current);
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
+      if (sectionRef.current) observer.unobserve(sectionRef.current);
     };
   }, []);
 
   return (
     <section id="skills" ref={sectionRef} className="section bg-light-gray">
       <div className="container mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center reveal">
-          Technical Skills
+        <h2 className="text-3xl md:text-4xl font-medium mb-12 text-center reveal">
+          Skills & Expertise
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {skillCategories.map((category, idx) => (
-            <div key={idx} className="bg-snow-white rounded-lg shadow-lg p-6 flex flex-col items-start reveal">
-              <h3 className="font-semibold text-lg mb-3">{category.name}</h3>
-              <ul className="list-disc ml-5 space-y-2">
+            <div
+              key={idx}
+              className="bg-white rounded-xl shadow-sm p-6 reveal"
+            >
+              <h3 className="font-semibold text-lg mb-4 text-apple-gray-900">
+                {category.name}
+              </h3>
+              <ul className="space-y-2">
                 {category.skills.map((skill, i) => (
-                  <li key={i} className="text-dark-navy text-base">{skill}</li>
+                  <li
+                    key={i}
+                    className="text-apple-gray-700 text-base flex items-center"
+                  >
+                    <span className="mr-2 text-apple-blue-600">•</span>
+                    {skill}
+                  </li>
                 ))}
               </ul>
             </div>

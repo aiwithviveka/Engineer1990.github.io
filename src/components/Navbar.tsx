@@ -42,7 +42,7 @@ const Navbar = () => {
             className="text-lg font-medium text-apple-gray-900 hover:text-apple-blue-600 transition-colors"
             aria-label="Home"
           >
-            ML Engineer
+            Viveka Sharma
           </Link>
 
           {/* Desktop Navigation */}
@@ -64,7 +64,7 @@ const Navbar = () => {
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                 <Twitter className="w-4 h-4 text-apple-gray-800 hover:text-apple-blue-600 transition-colors" strokeWidth={1.5} />
               </a>
-              <a href="mailto:contact@mlenginer.com" aria-label="Email">
+              <a href="mailto:vivekasharma01@gmail.com" aria-label="Email">
                 <Mail className="w-4 h-4 text-apple-gray-800 hover:text-apple-blue-600 transition-colors" strokeWidth={1.5} />
               </a>
             </div>
@@ -104,7 +104,7 @@ const Navbar = () => {
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
               <Twitter className="w-5 h-5 text-apple-gray-800" strokeWidth={1.5} />
             </a>
-            <a href="mailto:contact@mlenginer.com" aria-label="Email">
+            <a href="mailto:vivekasharma01@gmail.com" aria-label="Email">
               <Mail className="w-5 h-5 text-apple-gray-800" strokeWidth={1.5} />
             </a>
           </div>

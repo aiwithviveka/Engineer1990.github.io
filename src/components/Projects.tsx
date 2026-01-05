@@ -9,7 +9,7 @@ const projects = [
     image: "https://images.unsplash.com/photo-1483058712412-4245e9b90334",
     category: "Computer Vision",
     technologies: ["PyTorch", "OpenCV", "Python", "Docker"],
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/aiwithviveka",
     liveUrl: "https://example.com"
   },
   {

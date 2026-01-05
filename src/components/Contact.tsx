@@ -30,14 +30,9 @@ const Contact = () => {
       { threshold: 0.2 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
+    if (sectionRef.current) observer.observe(sectionRef.current);
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
+      if (sectionRef.current) observer.unobserve(sectionRef.current);
     };
   }, []);
 
@@ -104,7 +99,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-blue-500"
-                  placeholder="john@example.com"
+                  placeholder="john.doe@example.com"
                 />
               </div>
 
@@ -120,7 +115,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-blue-500"
-                  placeholder="Project Inquiry"
+                  placeholder="Project / Collaboration Inquiry"
                 />
               </div>
 
@@ -136,7 +131,7 @@ const Contact = () => {
                   required
                   rows={5}
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-blue-500"
-                  placeholder="I'd like to discuss a potential project..."
+                  placeholder="I'd like to discuss potential project..."
                 ></textarea>
               </div>
 
@@ -161,9 +156,8 @@ const Contact = () => {
             <div className="mb-12 reveal">
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
               <p className="mb-6">
-                Feel free to reach out for collaboration opportunities, consulting work,
-                or just to discuss exciting ML projects. I'm currently available for freelance work
-                and consulting.
+                Hi! I'm Viveka Sharma, Senior Operations Engineer & aspiring DevOps/Cloud Engineer. 
+                Feel free to reach out for collaboration, consulting, or AI/DevOps projects.
               </p>
 
               <div className="space-y-4">
@@ -171,8 +165,8 @@ const Contact = () => {
                   <Mail className="w-5 h-5 mr-3 text-sky-blue-500 mt-1" />
                   <div>
                     <h4 className="font-semibold">Email</h4>
-                    <a href="mailto:ping.bhargav@gmail.com" className="text-sky-blue-500 hover:underline">
-                      ping.bhargav@gmail.com
+                    <a href="mailto:vivekasharma01@gmail.com" className="text-sky-blue-500 hover:underline">
+                      vivekasharma01@example.com
                     </a>
                   </div>
                 </div>
@@ -182,6 +176,14 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold">Location</h4>
                     <p>Gurgaon, India</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <Phone className="w-5 h-5 mr-3 text-sky-blue-500 mt-1" />
+                  <div>
+                    <h4 className="font-semibold">Phone</h4>
+                    <p>+91-9959328747</p>
                   </div>
                 </div>
               </div>
@@ -195,8 +197,7 @@ const Contact = () => {
                   <span className="font-semibold">Currently Available for New Projects</span>
                 </div>
                 <p>
-                  I'm available for consultation and project work. My typical response time is
-                  within 24 hours.
+                  I'm available for consultation and project work. Typical response time: within 24 hours.
                 </p>
               </div>
             </div>
